@@ -1,4 +1,4 @@
-export enum StatutEnum {
+export enum StatusEnum {
     A_FAIRE = "À faire",
     EN_COURS = "En cours",
     TERMINEE = "Terminée",

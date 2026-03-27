@@ -9,6 +9,7 @@ const App: FunctionComponent = () => {
                 <MdChecklist className={"header-icon"} />
                 To-Do List
             </header>
+
         </>
     );
 };

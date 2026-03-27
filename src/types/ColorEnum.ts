@@ -1,4 +1,4 @@
-export enum CouleurEnum {
+export enum ColorEnum {
     ROUGE = "#EF4444",
     ORANGE = "#F97316",
     JAUNE = "#EAB308",

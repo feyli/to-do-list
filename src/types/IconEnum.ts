@@ -1,4 +1,4 @@
-export enum PictogrammeEnum {
+export enum IconEnum {
     ETOILE = "star",
     COEUR = "heart",
     MAISON = "home",
