@@ -1,18 +1,70 @@
-body {
+.app {
   display: flex;
   flex-direction: column;
-  @apply bg-gray-950 p-2;
+  min-height: 100vh;
+  @apply bg-gray-50 p-3 gap-3;
 }
 
-.app-header {
-  background-color: #282c34;
+.app-main {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: white;
-  @apply text-gray-900 text-xl bg-white w-fit p-2 rounded-md pointer-events-none select-none gap-2;
+  flex-direction: column;
+  flex: 1;
+  @apply gap-3 pb-20;
 }
 
-.app-header .header-icon {
-  @apply text-white text-3xl bg-blue-600 p-1 rounded-md;
+.app-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  @apply text-gray-400 text-sm;
+}
+
+/* Modal form styles (used by task + subset creation forms in App) */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  @apply gap-4;
+}
+
+.modal-form .form-field {
+  display: flex;
+  flex-direction: column;
+  @apply gap-1;
+}
+
+.modal-form .form-field label {
+  @apply text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.modal-form .form-field input,
+.modal-form .form-field textarea,
+.modal-form .form-field select {
+  @apply text-sm border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.modal-form .form-field input.input-error {
+  @apply border-red-400 focus:ring-red-500;
+}
+
+.modal-form .field-error {
+  @apply text-xs text-red-500;
+}
+
+.modal-form .color-picker {
+  display: flex;
+  flex-wrap: wrap;
+  @apply gap-2;
+}
+
+.modal-form .color-swatch {
+  @apply w-7 h-7 rounded-lg cursor-pointer transition-transform hover:scale-110 border-2 border-transparent;
+}
+
+.modal-form .color-swatch-active {
+  @apply border-gray-900 scale-110;
+}
+
+.btn-create {
+  @apply w-full text-sm font-medium text-white bg-blue-600 px-4 py-2.5 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed mt-2;
 }

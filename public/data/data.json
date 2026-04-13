@@ -1,0 +1,158 @@
+{
+  "tasks": [
+    {
+      "id": 101,
+      "name": "1. Features",
+      "description": "",
+      "creationDate": "2026-01-01",
+      "deadlineDate": "2026-03-01",
+      "status": "Succeeded",
+      "coworkerList": [
+        "Paul"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "2. Market research",
+      "description": "",
+      "creationDate": "2026-01-02",
+      "deadlineDate": "2026-04-01",
+      "status": "Abandoned",
+      "coworkerList": []
+    },
+    {
+      "id": 103,
+      "name": "3. Wireframes",
+      "description": "",
+      "creationDate": "2026-01-01",
+      "deadlineDate": "2026-03-17",
+      "status": "Waiting",
+      "coworkerList": []
+    },
+    {
+      "id": 104,
+      "name": "4. Design",
+      "description": "",
+      "creationDate": "2026-01-01",
+      "deadlineDate": "2026-03-18",
+      "status": "New",
+      "coworkerList": []
+    },
+    {
+      "id": 105,
+      "name": "5. Landing page",
+      "description": "",
+      "creationDate": "2026-01-05",
+      "deadlineDate": "2026-03-13",
+      "status": "New",
+      "coworkerList": []
+    },
+    {
+      "id": 106,
+      "name": "6. Development",
+      "description": "",
+      "creationDate": "2026-01-05",
+      "deadlineDate": "2026-03-28",
+      "status": "Waiting",
+      "coworkerList": []
+    },
+    {
+      "id": 107,
+      "name": "7. Release / Deployment",
+      "description": "",
+      "creationDate": "2026-01-06",
+      "deadlineDate": "2026-03-27",
+      "status": "New",
+      "coworkerList": [
+        "MyStore",
+        "Bob"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "8. Marketing",
+      "description": "",
+      "creationDate": "2026-03-10",
+      "deadlineDate": "2026-05-01",
+      "status": "New",
+      "coworkerList": []
+    },
+    {
+      "id": 109,
+      "name": "9. Feedback",
+      "description": "",
+      "creationDate": "2026-03-01",
+      "deadlineDate": "2026-05-01",
+      "status": "New",
+      "coworkerList": []
+    }
+  ],
+  "subsets": [
+    {
+      "id": 201,
+      "name": "Marketing",
+      "description": "",
+      "color": "#F97316",
+      "icon": ""
+    },
+    {
+      "id": 202,
+      "name": "Dev",
+      "description": "",
+      "color": "#EC4899",
+      "icon": ""
+    },
+    {
+      "id": 203,
+      "name": "Other",
+      "description": "",
+      "color": "#3B82F6",
+      "icon": ""
+    },
+    {
+      "id": 204,
+      "name": "ToDo-List project",
+      "description": "",
+      "color": "#22C55E",
+      "icon": "folder"
+    }
+  ],
+  "relations": [
+    {
+      "taskId": 102,
+      "subsetId": 201
+    },
+    {
+      "taskId": 108,
+      "subsetId": 201
+    },
+    {
+      "taskId": 109,
+      "subsetId": 203
+    },
+    {
+      "taskId": 105,
+      "subsetId": 202
+    },
+    {
+      "taskId": 106,
+      "subsetId": 202
+    },
+    {
+      "taskId": 101,
+      "subsetId": 204
+    },
+    {
+      "taskId": 102,
+      "subsetId": 204
+    },
+    {
+      "taskId": 102,
+      "subsetId": 202
+    },
+    {
+      "taskId": 102,
+      "subsetId": 203
+    }
+  ]
+}

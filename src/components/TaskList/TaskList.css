@@ -1,0 +1,12 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    @apply gap-2;
+}
+
+.task-list-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply py-12 text-gray-400 text-sm;
+}

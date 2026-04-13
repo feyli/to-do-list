@@ -1,0 +1,32 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    @apply bg-black/50;
+}
+
+.modal-content {
+    @apply bg-white rounded-xl shadow-2xl w-full max-w-lg mx-4 max-h-[90vh] overflow-y-auto;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @apply px-6 py-4 border-b border-gray-200;
+}
+
+.modal-title {
+    @apply text-lg font-semibold text-gray-900;
+}
+
+.modal-close-btn {
+    @apply text-gray-400 hover:text-gray-600 text-xl p-1 rounded-lg hover:bg-gray-100 transition-colors;
+}
+
+.modal-body {
+    @apply px-6 py-4;
+}

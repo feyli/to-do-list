@@ -1,0 +1,147 @@
+.subset-list {
+    display: flex;
+    flex-direction: column;
+    @apply gap-2;
+}
+
+.subset-list-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply py-12 text-gray-400 text-sm;
+}
+
+.subset-card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 px-4 py-3;
+}
+
+.subset-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @apply gap-3;
+}
+
+.subset-card-left {
+    display: flex;
+    align-items: center;
+    @apply gap-3 min-w-0 flex-1;
+}
+
+.subset-color-swatch {
+    @apply w-4 h-4 rounded flex-shrink-0;
+}
+
+.subset-card-icon {
+    @apply text-lg text-gray-500 flex-shrink-0;
+}
+
+.subset-card-info {
+    display: flex;
+    flex-direction: column;
+    @apply min-w-0;
+}
+
+.subset-card-name {
+    @apply text-sm font-medium text-gray-900 truncate;
+}
+
+.subset-card-desc {
+    @apply text-xs text-gray-500 truncate;
+}
+
+.subset-card-right {
+    display: flex;
+    align-items: center;
+    @apply gap-2 flex-shrink-0;
+}
+
+.subset-task-count {
+    @apply text-xs text-gray-400 font-medium;
+}
+
+.btn-edit-sm {
+    @apply text-gray-400 hover:text-blue-600 p-1 rounded-lg hover:bg-blue-50 transition-colors;
+}
+
+.btn-delete-sm {
+    @apply text-gray-400 hover:text-red-600 p-1 rounded-lg hover:bg-red-50 transition-colors;
+}
+
+.delete-confirm {
+    display: flex;
+    align-items: center;
+    @apply gap-1.5;
+}
+
+.delete-confirm-text {
+    @apply text-xs text-red-600 font-medium;
+}
+
+.btn-delete-yes {
+    @apply text-xs font-medium px-2 py-0.5 rounded bg-red-600 text-white hover:bg-red-700 transition-colors;
+}
+
+.btn-delete-no {
+    @apply text-xs font-medium px-2 py-0.5 rounded bg-gray-200 text-gray-600 hover:bg-gray-300 transition-colors;
+}
+
+.subset-task-list {
+    display: flex;
+    flex-wrap: wrap;
+    @apply gap-1.5 mt-2 pt-2 border-t border-gray-100;
+}
+
+.subset-task-chip {
+    @apply text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full;
+}
+
+/* Edit form reuses Task's form styles but scoped here too */
+.subset-edit-form {
+    display: flex;
+    flex-direction: column;
+    @apply gap-3;
+}
+
+.subset-edit-form .form-field {
+    display: flex;
+    flex-direction: column;
+    @apply gap-1;
+}
+
+.subset-edit-form .form-field label {
+    @apply text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.subset-edit-form .form-field input,
+.subset-edit-form .form-field textarea,
+.subset-edit-form .form-field select {
+    @apply text-sm border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.subset-edit-form .form-field input.input-error {
+    @apply border-red-400 focus:ring-red-500;
+}
+
+.subset-edit-form .field-error {
+    @apply text-xs text-red-500;
+}
+
+.subset-edit-actions {
+    display: flex;
+    @apply gap-2 mt-1;
+}
+
+.color-picker {
+    display: flex;
+    flex-wrap: wrap;
+    @apply gap-2;
+}
+
+.color-swatch {
+    @apply w-7 h-7 rounded-lg cursor-pointer transition-transform hover:scale-110 border-2 border-transparent;
+}
+
+.color-swatch-active {
+    @apply border-gray-900 scale-110;
+}

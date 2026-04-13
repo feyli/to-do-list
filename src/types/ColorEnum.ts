@@ -1,12 +1,12 @@
 export enum ColorEnum {
-    ROUGE = "#EF4444",
+    RED = "#EF4444",
     ORANGE = "#F97316",
-    JAUNE = "#EAB308",
-    VERT = "#22C55E",
-    BLEU = "#3B82F6",
+    YELLOW = "#EAB308",
+    GREEN = "#22C55E",
+    BLUE = "#3B82F6",
     INDIGO = "#6366F1",
-    VIOLET = "#A855F7",
-    ROSE = "#EC4899",
-    GRIS = "#6B7280",
-    MARRON = "#92400E"
+    PURPLE = "#A855F7",
+    PINK = "#EC4899",
+    GRAY = "#6B7280",
+    BROWN = "#92400E"
 }

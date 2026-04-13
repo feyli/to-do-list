@@ -1,6 +1,7 @@
 import { StatusEnum } from '../types/StatusEnum';
 
 export interface Task {
+    id: number;
     name: string;
     description: string;
     creationDate: Date;
@@ -9,23 +10,25 @@ export interface Task {
     coworkerList: string[];
 }
 
-export const createTache = (
+export const createTask = (
+    id: number,
     name: string,
     deadlineDate: Date,
     description: string = '',
-    status: StatusEnum = StatusEnum.A_FAIRE,
-    coworkerDate: string[] = []
+    status: StatusEnum = StatusEnum.NEW,
+    coworkerList: string[] = []
 ): Task => {
     if (name.length < 5) {
-        throw new Error('L\'intitulé doit contenir au moins 5 caractères');
+        throw new Error('Name must be at least 5 characters long');
     }
 
     return {
-        name: name,
+        id,
+        name,
         description,
         creationDate: new Date(),
-        deadlineDate: deadlineDate,
-        status: status,
-        coworkerList: coworkerDate
+        deadlineDate,
+        status,
+        coworkerList
     };
 };

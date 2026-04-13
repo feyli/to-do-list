@@ -1,12 +1,12 @@
 export enum IconEnum {
-    ETOILE = "star",
-    COEUR = "heart",
-    MAISON = "home",
-    TRAVAIL = "briefcase",
+    STAR = "star",
+    HEART = "heart",
+    HOME = "home",
+    WORK = "briefcase",
     URGENT = "alert-circle",
     IMPORTANT = "bookmark",
-    PROJET = "folder",
-    PERSONNEL = "user",
-    SANTE = "activity",
+    PROJECT = "folder",
+    PERSONAL = "user",
+    HEALTH = "activity",
     SHOPPING = "shopping-cart"
 }

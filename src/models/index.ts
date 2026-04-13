@@ -3,3 +3,4 @@ export * from './Subset';
 export * from '../types/StatusEnum';
 export * from '../types/ColorEnum';
 export * from '../types/IconEnum';
+export * from '../types/Relation';
